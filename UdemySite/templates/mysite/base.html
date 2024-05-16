@@ -4,7 +4,11 @@
     {% include 'mysite/snippets/head.html' %}
   </head>
   <body>
-    {%include 'mysite/snippets/header.html'%} {% block content %} {% endblock %}
+    {%include 'mysite/snippets/header.html'%} 
+    {% include 'mysite/snippets/messages.html' %}
+    
+    
+    {% block content %} {% endblock %}
     {%include 'mysite/snippets/footer.html'%}
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
